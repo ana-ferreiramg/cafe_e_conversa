@@ -5,7 +5,6 @@
   grid-template-areas:
     'banner'
     'wrapper';
-  justify-items: start;
   padding-top: 12rem;
   height: 100vh;
   width: 100%;
@@ -14,6 +13,7 @@
 .header-wrapper {
   grid-area: wrapper;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
@@ -25,6 +25,7 @@
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.8rem;
+  max-width: 50rem;
 }
 
 .header-wrapper h1 span {
@@ -34,10 +35,9 @@
 }
 
 .header-wrapper p {
-  margin-inline: auto;
-  max-width: 90%;
   font-size: 1.8rem;
   line-height: 2.8rem;
+  max-width: 52rem;
 }
 
 .header-wrapper p span {
@@ -47,18 +47,19 @@
 }
 
 .header-banner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   grid-area: banner;
   position: relative;
   width: 100%;
-  height: 35vh;
+  min-height: 35vh;
   mask-image: linear-gradient(to top, transparent 0%, black 7%);
   overflow: hidden;
 }
 
 .header-banner img {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  width: min(100%, 36rem);
 }
 
 .header-banner::before {
@@ -68,13 +69,14 @@
   left: 50%;
   -ms-transform: translate(-50%, -40%);
   transform: translate(-50%, -40%);
-  width: 90%;
+  width: min(90%, 32rem);
   height: 30rem;
   background-color: var(--text-color-red);
   border-radius: 30% 70% 50% 50% / 30% 30% 70% 70%;
   -webkit-animation: color-change-2x 4s linear infinite alternate both;
   animation: color-change-2x 4s linear infinite alternate both;
   mask-image: linear-gradient(to top, transparent 0%, black 30%);
+  z-index: -1;
 }
 
 @-webkit-keyframes color-change-2x {
@@ -100,5 +102,44 @@
   }
   100% {
     background: #fff591;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'wrapper banner';
+  }
+
+  .header-wrapper {
+    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .header-wrapper a.btn {
+    margin: 0;
+  }
+
+  .header-banner {
+    min-height: 300px;
+  }
+
+  .header-banner img {
+    width: min(100%, 60rem);
+  }
+
+  .header-banner::before {
+    width: min(90%, 45rem);
+    top: 40%;
+    height: 32rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-banner::before {
+    top: 40%;
+    height: 38rem;
   }
 }
