@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #ffffff;
+  --secondary-color: #eb5757;
   --text-color: #333333;
   --text-color-red: #eb5757;
   --text-color-light: #f2f2f2;
@@ -20,14 +21,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
-  font-size: 2.1rem;
 }
 
 body {
   background-color: var(--primary-color);
   color: var(--text-color);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 h1 {
@@ -41,12 +40,36 @@ h2 {
 a {
   color: unset;
   text-decoration: none;
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style: none;
 }
 
 header,
 main,
 footer {
   width: 100%;
-  max-width: 145rem;
-  padding: 1rem;
+  max-width: 120rem;
+  margin-inline: auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-inline: auto;
+  border-radius: 3.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+  width: 20rem;
+  height: 5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.btn__btn-dark {
+  background-color: var(--btn-dark);
+  color: var(--text-color-light);
 }
