@@ -1,0 +1,51 @@
+.main {
+  padding: 1rem;
+  text-align: center;
+}
+
+.main section {
+  margin-top: 5rem;
+}
+
+.main section > h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color-red);
+  text-transform: uppercase;
+}
+
+.main section > p {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  text-transform: capitalize;
+  margin: 1rem 0 3rem;
+}
+
+.section__services {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section__services div {
+  flex: 1;
+  padding: 2rem 1rem;
+  border-radius: 1.6rem;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+}
+
+.section__services img {
+  width: 50%;
+}
+
+.section__services h3 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.section__services p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
