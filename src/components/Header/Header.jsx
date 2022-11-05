@@ -22,7 +22,7 @@ const Header = () => {
         </p>
 
         <Link
-          className="btn btn__btn-dark"
+          className="btn btn__btn-dark pulse"
           activeClass="active"
           to="menu"
           spy={true}
