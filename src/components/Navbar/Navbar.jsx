@@ -68,7 +68,7 @@ const Navbar = () => {
       <div className="navbar-smallscreen">
         <GiHamburgerMenu
           fill="#eb5757"
-          size={50}
+          size={40}
           onClick={() => setToggleMenu(true)}
         />
 
@@ -76,7 +76,7 @@ const Navbar = () => {
           <div className="navbar-smallscreen_overlay flex__center slide-bottom">
             <MdOutlineRestaurantMenu
               fill="#eb5757"
-              size={50}
+              size={40}
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
             />

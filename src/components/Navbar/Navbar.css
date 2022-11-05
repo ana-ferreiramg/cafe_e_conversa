@@ -72,3 +72,25 @@
 .navbar-links {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .navbar-smallscreen {
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navbar-links li a {
+    border: 2px solid transparent;
+    padding: 0 1rem;
+    transition: 0.3s ease;
+  }
+
+  .navbar-links li a:hover {
+    border-bottom: 2px solid var(--secondary-color);
+    border-top: 2px solid var(--secondary-color);
+  }
+}
