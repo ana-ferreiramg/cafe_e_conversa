@@ -25,7 +25,7 @@
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.8rem;
-  max-width: 50rem;
+  max-width: 52rem;
 }
 
 .header-wrapper h1 span {
@@ -124,22 +124,36 @@
 
   .header-banner {
     min-height: 300px;
+    align-items: center;
   }
 
   .header-banner img {
-    width: min(100%, 60rem);
+    width: min(100%, 70rem);
+    mask-image: linear-gradient(to top, transparent 0%, black 7%);
   }
 
   .header-banner::before {
-    width: min(90%, 45rem);
+    width: min(90%, 35rem);
     top: 40%;
     height: 32rem;
   }
 }
 
 @media (min-width: 992px) {
+  .header-wrapper h1,
+  .header-wrapper h1 span {
+    font-size: 3.2rem;
+  }
+
+  .header-wrapper p,
+  .header-wrapper p span {
+    font-size: 2rem;
+  }
+
   .header-banner::before {
-    top: 40%;
+    top: 35%;
     height: 38rem;
+    width: min(90%, 45rem);
+    height: 40rem;
   }
 }

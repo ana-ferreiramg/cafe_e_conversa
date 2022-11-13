@@ -40,7 +40,7 @@ const Main = () => {
         <h2>Nosso Cardápio</h2>
         <p>Cardápio que sempre faz você se apaixonar</p>
         <div className="section__menu">
-          <ul>
+          <ul className="section__menu__navbar">
             <li>
               <a href="#">🍔 Hamburguer</a>
             </li>
@@ -57,6 +57,7 @@ const Main = () => {
               <a href="#">🍧 Ice Cream</a>
             </li>
           </ul>
+          <div className="section__menu__content"></div>
         </div>
       </section>
     </main>

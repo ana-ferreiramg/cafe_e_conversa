@@ -22,6 +22,7 @@
   margin: 1rem 0 3rem;
 }
 
+/* ###################### SECTION SERVICES ###################### */
 .section__services {
   display: flex;
   flex-direction: column;
@@ -48,4 +49,12 @@
 .section__services p {
   font-size: 1.6rem;
   line-height: 2.6rem;
+}
+
+/* ###################### SECTION MENU ###################### */
+
+@media (min-width: 768px) {
+  .section__services {
+    flex-direction: row;
+  }
 }
