@@ -1,9 +1,25 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import images from '../../constants/images';
+import { Card } from '../Card/Card';
+import JsonData from '../../data/data.json';
 
 import './Main.css';
 
 const Main = () => {
+  const [landingPageData, setLandingPageData] = useState({});
+  useEffect(() => {
+    setLandingPageData(JsonData);
+  }, []);
+  const [showCategory, setShowCategory] = useState('sanduiches');
+  const activeStyle = {
+    backgroundColor: `var(--secondary-color)`,
+    color: `var(--text-color-light)`,
+  };
+  const activeStyleIcon = { backgroundColor: `#ffffff` };
+
+  // style={this.state.active === menuItem ? activeStyle : {}}
+
   return (
     <main className="main">
       <section id="services">
@@ -42,22 +58,71 @@ const Main = () => {
         <div className="section__menu">
           <ul className="section__menu__navbar">
             <li>
-              <a href="#">🍔 Hamburguer</a>
+              <a
+                onClick={() => setShowCategory('sanduiches')}
+                style={showCategory === 'sanduiches' ? activeStyle : {}}>
+                <span
+                  style={showCategory === 'sanduiches' ? activeStyleIcon : {}}>
+                  &#129386;
+                </span>{' '}
+                Sanduíches
+              </a>
             </li>
             <li>
-              <a href="#">🍕 Pizza</a>
+              <a
+                onClick={() => setShowCategory('paes')}
+                style={showCategory === 'paes' ? activeStyle : {}}>
+                <span style={showCategory === 'paes' ? activeStyleIcon : {}}>
+                  &#127838;
+                </span>{' '}
+                Pães
+              </a>
             </li>
             <li>
-              <a href="#">🧁 Cupcake</a>
+              <a
+                onClick={() => setShowCategory('doces')}
+                style={showCategory === 'doces' ? activeStyle : {}}>
+                <span style={showCategory === 'doces' ? activeStyleIcon : {}}>
+                  &#129473;
+                </span>{' '}
+                Doces
+              </a>
             </li>
             <li>
-              <a href="#">🍜 Ramen</a>
+              <a
+                onClick={() => setShowCategory('bebidas')}
+                style={showCategory === 'bebidas' ? activeStyle : {}}>
+                <span style={showCategory === 'bebidas' ? activeStyleIcon : {}}>
+                  &#129380;
+                </span>{' '}
+                Bebidas
+              </a>
             </li>
             <li>
-              <a href="#">🍧 Ice Cream</a>
+              <a
+                onClick={() => setShowCategory('salgados')}
+                style={showCategory === 'salgados' ? activeStyle : {}}>
+                <span
+                  style={showCategory === 'salgados' ? activeStyleIcon : {}}>
+                  &#129375;
+                </span>{' '}
+                Salgados
+              </a>
             </li>
           </ul>
-          <div className="section__menu__content"></div>
+          <div className="section__menu__content">
+            {showCategory === 'sanduiches' && (
+              <Card data={landingPageData.Sanduiches} />
+            )}
+            {showCategory === 'paes' && <Card data={landingPageData.Paes} />}
+            {showCategory === 'doces' && <Card data={landingPageData.Doces} />}
+            {showCategory === 'bebidas' && (
+              <Card data={landingPageData.Bebidas} />
+            )}
+            {showCategory === 'salgados' && (
+              <Card data={landingPageData.Salgados} />
+            )}
+          </div>
         </div>
       </section>
     </main>
