@@ -52,6 +52,65 @@
 }
 
 /* ###################### SECTION MENU ###################### */
+.section__menu {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+ul.section__menu__navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.section__menu__navbar li {
+  width: min(48%, 20rem);
+  height: 5rem;
+}
+
+.section__menu__navbar li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 0.7rem;
+  border: 0.2rem solid var(--secondary-color);
+  border-radius: 5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.section__menu__navbar li a span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.section__menu__navbar li a:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
+}
+
+.section__menu__navbar li a:hover span {
+  background-color: #ffffff;
+}
+
+.section__menu__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
 
 @media (min-width: 768px) {
   .section__services {
