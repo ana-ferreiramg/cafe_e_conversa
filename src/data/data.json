@@ -1,0 +1,125 @@
+{
+  "Salgados": [
+    {
+      "name": "Croissant",
+      "isFilling": true,
+      "filling": "Frango, Presunto e Queijo, Chocolate, Banana e Canela, Goiabada",
+      "img": "/images/croissant.jpg"
+    },
+
+    {
+      "name": "Hambúrguer Assado",
+      "isFilling": true,
+      "filling": "Carne de hambúrguer, Tomate, Requeijão Cremoso, Queijo",
+      "img": "/images/hamburguer_assado.jpg"
+    },
+
+    {
+      "name": "Pão de Queijo",
+      "isFilling": true,
+      "filling": "Padrão, Presunto e Queijo, Catupiry, Frango, Calabresa",
+      "img": "/images/pao_de_queijo.jpg"
+    },
+
+    {
+      "name": "Pastel",
+      "isFilling": true,
+      "filling": "Presunto e Queijo, Carne e Queijo",
+      "img": "/images/pastel.png"
+    },
+
+    {
+      "name": "Pizza",
+      "isFilling": true,
+      "filling": "Frango, Presunto, Queijo, Calabresa, Pepperoni",
+      "img": "/images/pizza.jpg"
+    }
+  ],
+  "Sanduiches": [
+    {
+      "name": "Sanduíche Natural",
+      "isFilling": true,
+      "filling": "Alface, Tomate, Mussarela, Presunto",
+      "img": "/images/sanduiche_natural.jpg"
+    }
+  ],
+  "Doces": [
+    {
+      "name": "Bolo de Morango com Chantilly",
+      "isFilling": true,
+      "filling": "Ganache de Morango",
+      "img": "/images/bolo_confeitado.jpg"
+    },
+
+    {
+      "name": "Bolos Confeitados",
+      "isFilling": true,
+      "filling": "Variados",
+      "img": "/images/bolo_confeitado2.jpg"
+    },
+
+    {
+      "name": "Bolo de Pote",
+      "isFilling": true,
+      "filling": "Mousse de Maracujá, Prestígio",
+      "img": "/images/bolo_pote.jpg"
+    },
+
+    {
+      "name": "Torta de Chocolate",
+      "isFilling": true,
+      "filling": "Bombom",
+      "img": "/images/torta_chocolate.jpg"
+    },
+
+    {
+      "name": "Donuts",
+      "isFilling": false,
+      "filling": "Apenas cobertura",
+      "img": "/images/donuts.jpg"
+    },
+
+    {
+      "name": "Casadinho",
+      "isFilling": true,
+      "filling": "Goiabada",
+      "img": "/images/casadinho.png"
+    }
+  ],
+  "Paes": [
+    {
+      "name": "Pão de Sal",
+      "isFilling": false,
+      "filling": "",
+      "img": "/images/pao_de_sal.jpg"
+    },
+    {
+      "name": "Pão de Batata",
+      "isFilling": false,
+      "filling": "",
+      "img": "/images/pao_batata.jpg"
+    }
+  ],
+  "Bebidas": [
+    {
+      "name": "Suco de Laranja",
+      "isFilling": false,
+      "filling": "",
+      "img": "/images/suco_laranja.jpg"
+    },
+
+    {
+      "name": "Suco de Manga",
+      "isFilling": false,
+      "filling": "",
+      "img": "/images/suco_manga.jpg"
+    },
+
+    {
+      "name": "Café",
+      "isFilling": false,
+      "filling": "",
+      "img": "/images/cafe.jpg"
+    }
+  ]
+}
