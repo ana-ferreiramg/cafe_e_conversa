@@ -33,7 +33,6 @@
 .content__card h3 {
   color: var(--secondary-color);
   width: 100%;
-  font-size: 1.6rem;
 }
 
 .content__card h3 + p {
@@ -41,7 +40,6 @@
 }
 
 .content__card p {
-  font-size: 1.4rem;
   line-height: normal;
 }
 
