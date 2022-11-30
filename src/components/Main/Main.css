@@ -1,10 +1,10 @@
 .main {
-  padding: 1rem;
   text-align: center;
 }
 
 .main section {
   margin-top: 5rem;
+  padding: 1rem;
 }
 
 .main section > h2 {
@@ -110,6 +110,37 @@ ul.section__menu__navbar {
   flex-direction: column;
   gap: 2rem;
   width: 100%;
+}
+
+/* ###################### SECTION SOBRE NÓS ###################### */
+section#about {
+  background-color: var(--banner-light);
+  padding: 5rem 1.2rem;
+  border-radius: 0.8rem;
+}
+
+section#about:not(:first-child) h3 {
+  margin-top: 1.5rem;
+}
+
+section#about div {
+  max-width: 80rem;
+  margin-inline: auto;
+}
+
+section#about div p,
+li {
+  text-align: justify;
+}
+
+section#about ul {
+  list-style: disc;
+}
+
+section#about li {
+  list-style: disc outside none;
+  display: list-item;
+  margin-left: 3rem;
 }
 
 @media (min-width: 768px) {

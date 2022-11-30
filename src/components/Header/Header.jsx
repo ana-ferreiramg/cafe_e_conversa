@@ -11,11 +11,11 @@ const Header = () => {
     <header className="header">
       <div className="header-wrapper">
         <h1>
-          Aqui, a sua dieta é equilibrada:{' '}
+          Aqui, a sua dieta é equilibrada:
           <span>você sai com um pão de queijo em cada mão.</span>
         </h1>
         <p>
-          Você não pode comer aqui apenas uma vez.{' '}
+          Você não pode comer aqui apenas uma vez.
           <span>
             O caminho da felicidade tem o endereço da nossa lanchonete!
           </span>

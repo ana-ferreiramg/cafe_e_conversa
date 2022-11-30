@@ -1,0 +1,39 @@
+footer {
+  padding: 3rem 1rem 1rem;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color-red);
+  text-transform: uppercase;
+}
+
+.footer_contact div {
+  min-height: 10rem;
+  margin-top: 2rem;
+}
+
+.footer_contact a {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.footer_contact a + a {
+  margin-top: 1rem;
+}
+
+footer .instagram_icon,
+.whatsapp_icon {
+  margin-right: 1rem;
+}
+
+.instagram_icon {
+  color: rgba(225, 48, 108, 1);
+}
+
+.whatsapp_icon {
+  color: #128c7e;
+}

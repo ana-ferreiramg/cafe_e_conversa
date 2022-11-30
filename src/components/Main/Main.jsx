@@ -18,8 +18,6 @@ const Main = () => {
   };
   const activeStyleIcon = { backgroundColor: `#ffffff` };
 
-  // style={this.state.active === menuItem ? activeStyle : {}}
-
   return (
     <main className="main">
       <section id="services">
@@ -123,6 +121,34 @@ const Main = () => {
               <Card data={landingPageData.Salgados} />
             )}
           </div>
+        </div>
+      </section>
+      <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Missão, Visão e Valores </p>
+        <div>
+          <h3>Missão</h3>
+          <p>
+            Produzir e comercializar alimentos tradicionais e personalizados, de
+            qualidade e excelência que satisfaçam a necessidade de nossos
+            clientes, oferecendo uma variedade de produtos, prestando um
+            excelente atendimento e disponibilizando um ambiente acolhedor,
+            aconchegante e agradável.
+          </p>
+          <h3>Visão</h3>
+          <p>
+            Ser uma das principais referências no ramo alimentício e garantir a
+            qualidade dos produtos, satisfação dos clientes e reconhecimento da
+            marca.
+          </p>
+          <h3>Valores</h3>
+          <ul>
+            <li>Ética, honestidade e transparência.</li>
+            <li>Qualidade e responsabilidade.</li>
+            <li>Excelência no atendimento ao cliente.</li>
+            <li>Trabalho em equipe.</li>
+            <li>Desenvolvimento sustentável.</li>
+          </ul>
         </div>
       </section>
     </main>
