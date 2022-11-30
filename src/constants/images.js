@@ -1,8 +1,8 @@
-import logo from '../assets/logo.png';
-import banner from '../assets/banner.png';
-import delivery from '../assets/delivery.png';
-import orderFood from '../assets/order_food.png';
-import waiters from '../assets/waiters.png';
+import logo from '../assets/logo.webp';
+import banner from '../assets/banner.webp';
+import delivery from '../assets/delivery.webp';
+import orderFood from '../assets/order_food.webp';
+import waiters from '../assets/waiters.webp';
 
 export default {
   logo,
