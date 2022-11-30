@@ -126,6 +126,20 @@
       "isFilling": false,
       "filling": "",
       "img": "/images/cafe.webp"
+    },
+
+    {
+      "name": "Refrigerante",
+      "isFilling": false,
+      "filling": "",
+      "img": "/images/refrigerante.avif"
+    },
+
+    {
+      "name": "Cerveja",
+      "isFilling": false,
+      "filling": "",
+      "img": "/images/cerveja.webp"
     }
   ]
 }
